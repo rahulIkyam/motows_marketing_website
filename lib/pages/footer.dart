@@ -64,8 +64,8 @@ class _FooterState extends State<Footer> {
                         "Take control of your workshop's success with our powerful and user-friendly mobile app.",
                         maxLines: 5,
                         style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w700,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
                             height: 1.5,
                             color: Colors.white
                         ),
@@ -87,7 +87,7 @@ class _FooterState extends State<Footer> {
                 child: Image.asset(
                   "assets/images/dashboard.png",
                   fit: BoxFit.fill,
-                  height: screenWidth > 800 ? 280 : 170,
+                  height: screenWidth > 800 ? 290 : 170,
                 ),
               )
             ],

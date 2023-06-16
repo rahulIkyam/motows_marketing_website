@@ -46,29 +46,29 @@ class _BenefitsState extends State<Benefits> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        const Expanded(
+                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
+                              const Text(
                                 "Unlock the Power of Our Workshop Management Solution",
                                 maxLines: 5,
                                 style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontWeight: FontWeight.bold,
                                     height: 1.5,
-                                    color: Colors.black
+                                  color: Color(0xff131d48),
                                 ),),
-                              SizedBox(height: 10,),
+                              const SizedBox(height: 10,),
                               Text(
                                 "Unlock the potential of your workshop with our comprehensive set of tool designed to streamline operations, enhance customer service, and business growth.",
                                 maxLines: 5,
                                 style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.bold,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w500,
                                     height: 1.5,
-                                    color: Colors.black45
+                                  color:  const Color(0xff131d48).withOpacity(0.9),
                                 ),),
                             ],
                           ),
@@ -92,30 +92,30 @@ class _BenefitsState extends State<Benefits> {
                           height: screenWidth < 800 ? screenHeight/3 : screenHeight/2.5,
                         ),
                         const SizedBox(width: 50,),
-                        const Expanded(
+                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
+                              const Text(
                                 "Empowering Workshop Technicians for Success",
                                 maxLines: 5,
                                 style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontWeight: FontWeight.bold,
                                     height: 1.5,
-                                    color: Colors.black
+                                  color: Color(0xff131d48),
                                 ),
                               ),
-                              SizedBox(height: 10,),
+                              const SizedBox(height: 10,),
                               Text(
                                 "Empower your role with our workshop technician tools. Increase productivity, access job cards, communicate seamlessly, and deliver exceptional service. Enhance collaboration, grow your skills, and embrace career advancement opportunities.",
                                 maxLines: 5,
                                 style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.bold,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w500,
                                     height: 1.5,
-                                    color: Colors.black45
+                                  color: const Color(0xff131d48).withOpacity(0.9),
                                 ),),
                             ],
                           ),

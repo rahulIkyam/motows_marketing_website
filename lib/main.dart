@@ -5,8 +5,10 @@ import 'package:motows_website/pages/footer.dart';
 import 'package:motows_website/pages/landing_page.dart';
 import 'package:motows_website/pages/benefits.dart';
 import 'package:motows_website/pages/features.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 void main() {
+  setPathUrlStrategy();
   runApp(const MyApp());
 }
 
