@@ -72,11 +72,11 @@ class _FooterState extends State<Footer> {
                       ),
                     ),
                     Padding(
-                      padding:  EdgeInsets.only(left: screenWidth > 800 ? 190 : 60, top: 30),
+                      padding:  EdgeInsets.only(left: screenWidth > 1000 ? 190 : 60, top: screenWidth > 1000 ? 30 : 10),
                       child: Image.asset(
                         "assets/images/google_play.png",
                         fit: BoxFit.fill,
-                        height: 60,
+                        height: screenWidth < 800 ? 40 : 60,
                       ),
                     )
                   ],
@@ -87,7 +87,7 @@ class _FooterState extends State<Footer> {
                 child: Image.asset(
                   "assets/images/dashboard.png",
                   fit: BoxFit.fill,
-                  height: screenWidth > 800 ? 290 : 170,
+                  height: screenWidth > 800 ? 290 : 190,
                 ),
               )
             ],

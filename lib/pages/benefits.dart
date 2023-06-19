@@ -77,7 +77,7 @@ class _BenefitsState extends State<Benefits> {
                         Image.asset(
                           "assets/images/technician2.png",
                           fit: BoxFit.fill,
-                          height: screenWidth < 800 ? screenHeight/3 : screenHeight/2.5,
+                          height: screenWidth < 800 ? screenHeight/4 : screenHeight/2.5,
                         ),
                       ],
                     ),
@@ -89,7 +89,7 @@ class _BenefitsState extends State<Benefits> {
                         Image.asset(
                           "assets/images/technician1.png",
                           fit: BoxFit.fill,
-                          height: screenWidth < 800 ? screenHeight/3 : screenHeight/2.5,
+                          height: screenWidth < 800 ? screenHeight/4 : screenHeight/2.5,
                         ),
                         const SizedBox(width: 50,),
                          Expanded(
