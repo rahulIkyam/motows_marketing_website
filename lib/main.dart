@@ -112,34 +112,40 @@ class _MyHomePageState extends State<MyHomePage> {
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
         automaticallyImplyLeading: screenWidth > 800 ?false: true,
-        leading: Image.asset("assets/logo/motows.png",),
-        leadingWidth: 200,
+        leading: Padding(
+          padding:  EdgeInsets.only(left: screenWidth > 800 ? 40 : 20),
+          child: Image.asset("assets/logo/motows.png",),
+        ),
+        leadingWidth: 150,
         actions: kIsWeb && screenWidth > 600 ? [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              GestureDetector(
-                onTap: () => _scrollToSection(1),
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text("About Us",style: TextStyle(color: Color(0xff131d48))),
+          Padding(
+            padding:  EdgeInsets.only(right: screenWidth > 800 ? 40 : 0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                GestureDetector(
+                  onTap: () => _scrollToSection(1),
+                  child: const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text("About Us",style: TextStyle(color: Color(0xff131d48))),
+                  ),
                 ),
-              ),
-              GestureDetector(
-                onTap: () => _scrollToSection(2),
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text("Features",style: TextStyle(color: Color(0xff131d48))),
+                GestureDetector(
+                  onTap: () => _scrollToSection(2),
+                  child: const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text("Features",style: TextStyle(color: Color(0xff131d48))),
+                  ),
                 ),
-              ),
-              GestureDetector(
-                onTap: () => _scrollToSection(3),
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text("Benefits",style: TextStyle(color: Color(0xff131d48))),
+                GestureDetector(
+                  onTap: () => _scrollToSection(3),
+                  child: const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text("Benefits",style: TextStyle(color: Color(0xff131d48))),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ] : null,
       ),
@@ -166,12 +172,12 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 height: screenHeight,
                 width: screenWidth,
-                // child: const AboutUs(),
+                child: const AboutUs(),
               ),
               SizedBox(
                 height: screenHeight,
                 width: screenWidth,
-                // child: const Features(),
+                child: const Features(),
               ),
               SizedBox(
                 height: screenHeight,
