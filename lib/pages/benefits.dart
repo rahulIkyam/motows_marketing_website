@@ -42,44 +42,46 @@ class _BenefitsState extends State<Benefits> {
                 padding: const EdgeInsets.only(left: 60, right: 60, top: 20, bottom: 20),
                 child: Column(
                   children: [
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                         Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Text(
-                                "Unlock the Power of Our Workshop Management Solution",
-                                maxLines: 5,
-                                style: TextStyle(
-                                    fontSize: 22,
-                                    fontWeight: FontWeight.bold,
-                                    height: 1.5,
-                                  color: Color(0xff131d48),
-                                ),),
-                              const SizedBox(height: 10,),
-                              Text(
-                                "Unlock the potential of your workshop with our comprehensive set of tool designed to streamline operations, enhance customer service, and business growth.",
-                                maxLines: 5,
-                                style: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w500,
-                                    height: 1.5,
-                                  color:  const Color(0xff131d48).withOpacity(0.9),
-                                ),),
-                            ],
+                    Expanded(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                           Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Text(
+                                  "Unlock the Power of Our Workshop Management Solution",
+                                  maxLines: 5,
+                                  style: TextStyle(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold,
+                                      height: 1.5,
+                                    color: Color(0xff131d48),
+                                  ),),
+                                const SizedBox(height: 10,),
+                                Text(
+                                  "Unlock the potential of your workshop with our comprehensive set of tool designed to streamline operations, enhance customer service, and business growth.",
+                                  maxLines: 5,
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w500,
+                                      height: 1.5,
+                                    color:  const Color(0xff131d48).withOpacity(0.9),
+                                  ),),
+                              ],
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: 50,),
-                        Image.asset(
-                          "assets/images/technician2.png",
-                          fit: BoxFit.fill,
-                          height: screenWidth < 800 ? screenHeight/4 : screenHeight/2.5,
-                        ),
-                      ],
+                          const SizedBox(width: 50,),
+                          Image.asset(
+                            "assets/images/technician2.png",
+                            fit: BoxFit.fill,
+                            height: screenWidth < 900 ? screenHeight/4 : screenHeight/2.5,
+                          ),
+                        ],
+                      ),
                     ),
                     const SizedBox(height: 20,),
                     Row(
@@ -89,7 +91,7 @@ class _BenefitsState extends State<Benefits> {
                         Image.asset(
                           "assets/images/technician1.png",
                           fit: BoxFit.fill,
-                          height: screenWidth < 800 ? screenHeight/4 : screenHeight/2.5,
+                          height: screenWidth < 900 ? screenHeight/4 : screenHeight/2.5,
                         ),
                         const SizedBox(width: 50,),
                          Expanded(

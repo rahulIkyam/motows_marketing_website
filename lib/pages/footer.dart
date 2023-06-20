@@ -46,7 +46,7 @@ class _FooterState extends State<Footer> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                      Padding(
-                      padding: EdgeInsets.only(top: screenWidth > 800 ? 230 : 170, left: screenWidth > 800 ? 200 : 70),
+                      padding: EdgeInsets.only(top: screenWidth > 1000 ? 230 : 170, left: screenWidth > 800 ? 200 : 70),
                       child: const Text(
                         "Download Our Workshop Owner App Today",
                         maxLines: 5,
@@ -72,7 +72,7 @@ class _FooterState extends State<Footer> {
                       ),
                     ),
                     Padding(
-                      padding:  EdgeInsets.only(left: screenWidth > 1000 ? 190 : 60, top: screenWidth > 1000 ? 30 : 10),
+                      padding:  EdgeInsets.only(left: screenWidth > 800 ? 190 : 60, top: screenWidth > 1000 ? 30 : 10),
                       child: Image.asset(
                         "assets/images/google_play.png",
                         fit: BoxFit.fill,
@@ -87,7 +87,7 @@ class _FooterState extends State<Footer> {
                 child: Image.asset(
                   "assets/images/dashboard.png",
                   fit: BoxFit.fill,
-                  height: screenWidth > 800 ? 290 : 190,
+                  height: screenWidth > 800 ? 290 : 200,
                 ),
               )
             ],
@@ -107,8 +107,8 @@ class _FooterState extends State<Footer> {
                     Row(
                       children: [
                         Image.asset("assets/images/facebook.png", fit: BoxFit.fill,height: 20,),
-                        const SizedBox(width: 20,),
-                        Image.asset("assets/images/twitter.png", fit: BoxFit.fill,height: 20,),
+                        // const SizedBox(width: 20,),
+                        // Image.asset("assets/images/twitter.png", fit: BoxFit.fill,height: 20,),
                       ],
                     ),
                   ],

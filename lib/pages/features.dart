@@ -14,6 +14,7 @@ class _FeaturesState extends State<Features> {
   Widget build(BuildContext context) {
     screenHeight =MediaQuery.of(context).size.height;
     screenWidth= MediaQuery.of(context).size.width;
+    print(screenWidth);
     return Scaffold(
       backgroundColor: Colors.grey[50],
       body: Stack(

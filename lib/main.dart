@@ -166,22 +166,22 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 height: screenHeight,
                 width: screenWidth,
-                child: const AboutUs(),
+                // child: const AboutUs(),
               ),
               SizedBox(
                 height: screenHeight,
                 width: screenWidth,
-                child: const Features(),
+                // child: const Features(),
               ),
               SizedBox(
                 height: screenHeight,
                 width: screenWidth,
-                child: const Benefits(),
+                // child: const Benefits(),
               ),
               SizedBox(
                 height: screenHeight,
                 width: screenWidth,
-                child: const Footer(),
+                // child: const Footer(),
               ),
             ],
           ),
