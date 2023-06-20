@@ -13,50 +13,35 @@ class _AboutUsTabState extends State<AboutUsTab> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[50],
-      body: Stack(
+      body: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(right: 16),
-            child: Align(
-              alignment: Alignment.centerRight,
-              child: Image.asset("assets/images/side_bar.png"),
-            ),
-          ),
-          Positioned(
-            top: 50,
-            left: 300,
-            child: Image.asset(
-              "assets/images/question_mark.png",
-              height: 400,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 50, right: 40),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                const Expanded(
-                  child: Text(
-                    "Why Choose \nMotows",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      height: 1.5,
-                      color: Color(0xff131d48),
-                    ),
-                    maxLines: 5,
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  const Column(
+                    children: [
+                      SizedBox(height: 370,child: Text("?",style: TextStyle(color: Color(0xffDDE8FA),fontSize: 300,fontWeight: FontWeight.bold,),)),
+
+                      Text(
+                        "Why Choose \nMotows",
+                        style: TextStyle(
+                          fontSize: 38,
+                          fontWeight: FontWeight.bold,
+                          height: 1.5,
+                          color: Color(0xff131d48),
+                        ),
+                        maxLines: 5,
+                      ),
+                    ],
                   ),
-                ),
-                Expanded(
-                  child: Column(
+                  Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(
                         height: 150,
-                        width: 350,
+                        width: 330,
                         child: Card(
                           color: Colors.white,
                           shadowColor: Colors.lightBlueAccent,
@@ -104,7 +89,7 @@ class _AboutUsTabState extends State<AboutUsTab> {
                       const SizedBox(height: 50,),
                       SizedBox(
                         height: 150,
-                        width: 350,
+                        width: 330,
                         child: Card(
                           color: Colors.white,
                           shadowColor: Colors.lightBlueAccent,
@@ -152,7 +137,7 @@ class _AboutUsTabState extends State<AboutUsTab> {
                       const SizedBox(height: 50,),
                       SizedBox(
                         height: 150,
-                        width: 350,
+                        width: 330,
                         child: Card(
                           color: Colors.white,
                           shadowColor: Colors.lightBlueAccent,
@@ -200,9 +185,11 @@ class _AboutUsTabState extends State<AboutUsTab> {
                       )
                     ],
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
+          Align(
+            child: Image.asset("assets/images/side_bar.png",width: 60),
           ),
         ],
       ),
