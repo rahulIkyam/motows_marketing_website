@@ -17,7 +17,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
           Align(
             alignment: Alignment.topCenter,
             child: Padding(
-              padding: const EdgeInsets.only(top: 25),
+              padding: const EdgeInsets.only(top: 20),
               child: Column(
                 children: [
                   const Text(
