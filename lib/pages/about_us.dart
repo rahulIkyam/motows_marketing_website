@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:motows_website/responsive_about_us/about_us_desktop.dart';
 import 'package:motows_website/responsive_about_us/about_us_mobile.dart';
@@ -21,13 +21,11 @@ class _AboutUsState extends State<AboutUs> {
   Widget build(BuildContext context) {
     screenHeight =MediaQuery.of(context).size.height;
     screenWidth= MediaQuery.of(context).size.width;
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      body: const Responsive(
-        desktop: AboutUsDesktop(),
-        tablet: AboutUsTab(),
-        mobile: AboutUsMobile(),
-      )
+    return const Responsive(
+      desktop: AboutUsDesktop(),
+      mobile: AboutUsMobile(),
+      tablet: AboutUsTab(),
+
     );
   }
 }

@@ -10,9 +10,9 @@ class AboutUsDesktop extends StatefulWidget {
 class _AboutUsDesktopState extends State<AboutUsDesktop> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      body: Row(
+    return  SizedBox(
+      height: 700,
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -23,19 +23,29 @@ class _AboutUsDesktopState extends State<AboutUsDesktop> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                    Column(
+                  const Column(
                     children: [
-                      SizedBox(height: 60,),
-                      Text("?",style: TextStyle(height:1,color: Color(0xffDDE8FA),fontSize: 300,fontWeight: FontWeight.bold,),textAlign: TextAlign.start,),
-                      Text(
-                        "Why Choose \nMotows",
-                        style: TextStyle(
-                          fontSize: 45,
-                          fontWeight: FontWeight.bold,
+                      SizedBox(height: 120,),
+                      Stack(alignment: Alignment.topCenter,
+                        children: [
 
-                          color: Color(0xff131d48),
-                        ),
-                        maxLines: 5,
+                          Text("?",style: TextStyle(height:1,color: Color(0xffDDE8FA),fontSize: 300,fontWeight: FontWeight.bold,),textAlign: TextAlign.center),
+                          Column(
+                            children: [
+                              SizedBox(height: 220,),
+                              Text(
+                                "Why Choose \nMotows",
+                                style: TextStyle(
+                                  fontSize: 45,
+                                  fontWeight: FontWeight.bold,
+
+                                  color: Color(0xff131d48),
+                                ),
+                                maxLines: 5,
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -43,7 +53,7 @@ class _AboutUsDesktopState extends State<AboutUsDesktop> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      const SizedBox(height: 60,),
+                      const SizedBox(height: 90,),
                       SizedBox(
                         height: 150,
                         width: 350,

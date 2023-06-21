@@ -10,9 +10,8 @@ class AboutUsMobile extends StatefulWidget {
 class _AboutUsMobileState extends State<AboutUsMobile> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      body: Stack(
+    return  SizedBox(height: 650,
+      child: Stack(
         children: [
           Padding(
             padding: const EdgeInsets.only(right: 16),
