@@ -5,7 +5,9 @@ import 'package:motows_website/pages/footer.dart';
 import 'package:motows_website/pages/landing_page.dart';
 import 'package:motows_website/pages/benefits.dart';
 import 'package:motows_website/pages/features.dart';
+import 'package:motows_website/pages/privacy_policy.dart';
 import 'package:url_strategy/url_strategy.dart';
+import 'package:universal_html/html.dart' as html;
 
 void main() {
   setPathUrlStrategy();
@@ -27,7 +29,12 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.white,
         )
       ),
-      home: const MyHomePage(),
+      // home: const MyHomePage(),
+      initialRoute: "/",
+      routes: {
+        "/" : (context) => const MyHomePage(),
+        PrivacyPolicy.privacyRoute:(context) => const PrivacyPolicy(),
+      },
     );
   }
 }
@@ -50,13 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
     switch (sectionIndex) {
       case 1:
-        sectionOffset = screenHeight; // Scroll to About Us section
+        sectionOffset = 600; // Scroll to About Us section
         break;
       case 2:
-        sectionOffset = screenHeight * 2; // Scroll to Features section
+        sectionOffset = 650 * 2; // Scroll to Features section
         break;
       case 3:
-        sectionOffset = screenHeight * 3; // Scroll to Benefits section
+        sectionOffset = 650 * 3; // Scroll to Benefits section
         break;
       default:
       // Manual scrolling for Landing and Footer sections
@@ -108,6 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
     screenHeight =MediaQuery.of(context).size.height;
     screenWidth= MediaQuery.of(context).size.width;
     return Scaffold(
+      backgroundColor: Colors.grey[50],
       appBar:AppBar(
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
@@ -164,30 +172,67 @@ class _MyHomePageState extends State<MyHomePage> {
           controller: _scrollController,
           child: Column(
             children: [
-              SizedBox(
-                height: screenHeight,
-                width: screenWidth,
-                child:  const LandingPage(),
+              const SizedBox(
+                child:  LandingPage(),
               ),
-              SizedBox(
-                height: screenHeight,
-                width: screenWidth,
-                child: const AboutUs(),
+              const SizedBox(
+                child: AboutUs(),
               ),
-              SizedBox(
-                height: screenHeight,
-                width: screenWidth,
-                child: const Features(),
+              const SizedBox(
+                child: Features(),
               ),
-              SizedBox(
-                height: screenHeight,
-                width: screenWidth,
-                child: const Benefits(),
+              const SizedBox(
+                child: Benefits(),
               ),
-              SizedBox(
-                height: screenHeight,
+              const SizedBox(
+                child: Footer(),
+              ),
+              Container(
+                height: 50,
                 width: screenWidth,
-                child: const Footer(),
+                color: Colors.black,
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20, right: 40),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          const Text(
+                              "\u00A9 copyright 2023 Motows Solutions Pvt Ltd",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          const VerticalDivider(
+                            color: Colors.white,
+                            indent: 8,
+                            endIndent: 8,
+                            thickness: 2,
+                          ),
+                          InkWell(
+                            onTap: () {
+                              html.window.open("/privacy-policy", "_blank");
+                            },
+                            child: const Text(
+                              "Privacy-Policy",
+                              style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  color: Colors.white,
+                                  decorationColor: Colors.white,
+                                  decorationThickness: 3
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Image.asset(
+                          "assets/images/facebook.png",
+                        height: 20,
+                        fit: BoxFit.fitHeight,
+                      )
+                    ],
+                  ),
+                ),
               ),
             ],
           ),

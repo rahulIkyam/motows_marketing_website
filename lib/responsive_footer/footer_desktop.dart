@@ -8,44 +8,28 @@ class FooterDesktop extends StatefulWidget {
 }
 
 class _FooterDesktopState extends State<FooterDesktop> {
-  double screenHeight = 0;
-  double screenWidth = 0;
-
   @override
   Widget build(BuildContext context) {
-    screenHeight = MediaQuery
-        .of(context)
-        .size
-        .height;
-    screenWidth = MediaQuery
-        .of(context)
-        .size
-        .width;
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      body: Stack(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(
-                top: 100, left: 150, right: 160, bottom: 100),
-            child: Center(
+    return SizedBox(
+      height: 600,
+      child: Padding(
+        padding: const EdgeInsets.only(left: 150, right: 160, top: 80, bottom: 80),
+        child: Stack(
+          children: [
+            Center(
               child: Image.asset(
                 "assets/images/rectangle1.png",
                 height: 500,
                 fit: BoxFit.fill,
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 160, right: 180),
-            child: Center(
+            Padding(
+              padding: const EdgeInsets.only(left: 80, right: 90, top: 20, bottom: 20),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  SizedBox(
-                    height: 300,
-                    width: 300,
+                  Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -82,45 +66,16 @@ class _FooterDesktopState extends State<FooterDesktop> {
                       ],
                     ),
                   ),
-                  SizedBox(
-                      height: 350,
-                      width: 400,
-                      child: Image.asset(
-                        "assets/images/dashboard.png",
-                        fit: BoxFit.fitHeight,
-                        // height: 400,
-                      ),
+                  Image.asset(
+                    "assets/images/dashboard.png",
+                    fit: BoxFit.fitHeight,
+                    // height: 400,
                   ),
                 ],
               ),
             ),
-          ),
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Container(
-              height: 50,
-              width: screenWidth,
-              color: Colors.black,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 10, right: 35),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text(
-                      "\u00A9 copyright 2023 Motows Solutions Pvt Ltd",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    Image.asset(
-                      "assets/images/facebook.png",
-                      fit: BoxFit.fill,
-                      height: 20,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          )
-        ],
+          ],
+        ),
       ),
     );
   }

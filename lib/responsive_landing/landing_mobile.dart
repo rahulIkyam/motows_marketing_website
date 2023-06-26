@@ -9,15 +9,11 @@ class LandingMobile extends StatefulWidget {
 }
 
 class _LandingMobileState extends State<LandingMobile> {
-  double screenHeight = 0;
-  double screenWidth = 0;
   @override
   Widget build(BuildContext context) {
-    screenHeight =MediaQuery.of(context).size.height;
-    screenWidth= MediaQuery.of(context).size.width;
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      body: Padding(
+    return SizedBox(
+      height: 600,
+      child: Padding(
         padding: const EdgeInsets.only(left: 30, right: 50, top: 20),
         child: Stack(
           children: [
@@ -62,7 +58,6 @@ class _LandingMobileState extends State<LandingMobile> {
                             alignment: Alignment.centerRight,
                             height: 250,
                             width: 500,
-                            // color: Colors.red,
                             child: Image.asset(
                               "assets/images/background.png",
                               fit: BoxFit.fill,
@@ -74,7 +69,6 @@ class _LandingMobileState extends State<LandingMobile> {
                             alignment: Alignment.center,
                             height: 450,
                             width: 220,
-                            // color: Colors.blue,
                             child: Image.asset(
                               "assets/images/dashboard.png",
                               fit: BoxFit.fill,
@@ -87,50 +81,47 @@ class _LandingMobileState extends State<LandingMobile> {
                   ),
                 ),
                 Expanded(
-                  child: Container(
-                    alignment: Alignment.centerLeft,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Padding(
-                          padding: EdgeInsets.only(left: 30, bottom: 10),
-                          child: Text(
-                            "Unleash The Full Potential Of Your Workshop Business With Our Workshop Management App.",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              height: 1.5,
-                              color: Color(0xff131d48),
-                            ),
-                            maxLines: 5,
-                            textAlign: TextAlign.start,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.only(left: 30, bottom: 10),
+                        child: Text(
+                          "Unleash The Full Potential Of Your Workshop Business With Our Workshop Management App.",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            height: 1.5,
+                            color: Color(0xff131d48),
                           ),
+                          maxLines: 5,
+                          textAlign: TextAlign.start,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, bottom: 10),
-                          child: Text(
-                            "Revolutionize your garage business with our mobile app. Streamline operations, optimize customer management, and fuel growth. Download now to unlock efficiency and success.",
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w600,
-                              color: const Color(0xff131d48).withOpacity(0.8),
-                              height: 1.5,
-                            ),
-                            maxLines: 5,
-                            textAlign: TextAlign.start,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 30, bottom: 10),
+                        child: Text(
+                          "Revolutionize your garage business with our mobile app. Streamline operations, optimize customer management, and fuel growth. Download now to unlock efficiency and success.",
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: const Color(0xff131d48).withOpacity(0.8),
+                            height: 1.5,
                           ),
+                          maxLines: 5,
+                          textAlign: TextAlign.start,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 20),
-                          child: Image.asset(
-                            "assets/images/google_play.png",
-                            fit: BoxFit.fill,
-                            height: 40,
-                          ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: Image.asset(
+                          "assets/images/google_play.png",
+                          fit: BoxFit.fill,
+                          height: 40,
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
               ],

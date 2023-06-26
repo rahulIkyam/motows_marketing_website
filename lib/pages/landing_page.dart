@@ -13,19 +13,12 @@ class LandingPage extends StatefulWidget {
 }
 
 class _LandingPageState extends State<LandingPage> {
-  double screenHeight = 0;
-  double screenWidth = 0;
   @override
   Widget build(BuildContext context) {
-    screenHeight =MediaQuery.of(context).size.height;
-    screenWidth= MediaQuery.of(context).size.width;
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      body: const Responsive(
-          mobile: LandingMobile(),
-          tablet: LandingTablet(),
-          desktop: LandingDesktop()
-      ),
+    return const Responsive(
+        mobile: LandingMobile(),
+        tablet: LandingTablet(),
+        desktop: LandingDesktop()
     );
   }
 }

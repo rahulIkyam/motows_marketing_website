@@ -9,15 +9,11 @@ class LandingTablet extends StatefulWidget {
 }
 
 class _LandingTabletState extends State<LandingTablet> {
-  double screenHeight = 0;
-  double screenWidth = 0;
   @override
   Widget build(BuildContext context) {
-    screenHeight =MediaQuery.of(context).size.height;
-    screenWidth= MediaQuery.of(context).size.width;
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      body: Padding(
+    return SizedBox(
+      height: 600,
+      child: Padding(
         padding: const EdgeInsets.only(left: 30, right: 50),
         child: Stack(
           children: [
@@ -25,23 +21,23 @@ class _LandingTabletState extends State<LandingTablet> {
                 top: 150,
                 child: Image.asset(
                   "assets/images/background_arrow.png",
-                  height: 300,
+                  height: 250,
                   fit: BoxFit.fill,
                 )),
             Positioned(
-                top: 50,
-                left: 200,
+                top: 100,
+                left: 150,
                 child: Image.asset(
                   "assets/images/background_arrow.png",
-                  height: 300,
+                  height: 250,
                   fit: BoxFit.fill,
                 )),
             Positioned(
                 top: 150,
-                left: 400,
+                left: 300,
                 child: Image.asset(
                   "assets/images/background_arrow.png",
-                  height: 300,
+                  height: 250,
                   fit: BoxFit.fill,
                 )),
             Row(
@@ -75,7 +71,7 @@ class _LandingTabletState extends State<LandingTablet> {
                             "Revolutionize your garage business with our mobile app. Streamline operations, optimize customer management, and fuel growth. Download now to unlock efficiency and success.",
                             style: TextStyle(
                               fontSize: 14,
-                              fontWeight: FontWeight.w600,
+                              fontWeight: FontWeight.w500,
                               color: const Color(0xff131d48).withOpacity(0.8),
                               height: 1.5,
                             ),
@@ -99,7 +95,7 @@ class _LandingTabletState extends State<LandingTablet> {
                   child: Container(
                     alignment: Alignment.centerRight,
                     height: 500,
-                    width: screenWidth / 2,
+                    width: 500,
                     child: Padding(
                       padding: const EdgeInsets.only(right: 60),
                       child: Stack(

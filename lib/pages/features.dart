@@ -13,19 +13,12 @@ class Features extends StatefulWidget {
 }
 
 class _FeaturesState extends State<Features> {
-  double screenHeight = 0;
-  double screenWidth = 0;
   @override
   Widget build(BuildContext context) {
-    screenHeight =MediaQuery.of(context).size.height;
-    screenWidth= MediaQuery.of(context).size.width;
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      body: const Responsive(
-          mobile: FeaturesMobile(),
-          tablet: FeaturesTab(),
-          desktop: FeaturesDesktop(),
-      )
+    return const Responsive(
+      mobile: FeaturesMobile(),
+      tablet: FeaturesTab(),
+      desktop: FeaturesDesktop(),
     );
   }
 }

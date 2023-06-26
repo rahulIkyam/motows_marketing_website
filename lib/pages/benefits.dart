@@ -14,19 +14,12 @@ class Benefits extends StatefulWidget {
 }
 
 class _BenefitsState extends State<Benefits> {
-  double screenHeight = 0;
-  double screenWidth = 0;
   @override
   Widget build(BuildContext context) {
-    screenHeight =MediaQuery.of(context).size.height;
-    screenWidth= MediaQuery.of(context).size.width;
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      body: const Responsive(
-          mobile: BenefitsMobile(),
-          tablet: BenefitsTab(),
-          desktop: BenefitsDesktop(),
-      )
+    return const Responsive(
+      mobile: BenefitsMobile(),
+      tablet: BenefitsTab(),
+      desktop: BenefitsDesktop(),
     );
   }
 }
