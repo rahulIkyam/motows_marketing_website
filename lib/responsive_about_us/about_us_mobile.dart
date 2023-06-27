@@ -36,15 +36,15 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
               const Text(
                 "Why Choose \nMotows",
                 style: TextStyle(
-                  fontSize: 40,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
-                  height: 1.5,
+                  height: 1.1,
                   color: Color(0xff131d48),
                 ),
                 maxLines: 5,
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 60, right: 80, top: 20),
+                padding: const EdgeInsets.only(left: 60, right: 80, top: 10),
                 child: Card(
                   color: Colors.white,
                   shadowColor: Colors.lightBlueAccent,
@@ -91,7 +91,7 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 60, right: 80, top: 20),
+                padding: const EdgeInsets.only(left: 60, right: 80, top: 10),
                 child: Card(
                   color: Colors.white,
                   shadowColor: Colors.lightBlueAccent,
@@ -138,7 +138,7 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 60, right: 80, top: 20),
+                padding: const EdgeInsets.only(left: 60, right: 80, top: 10),
                 child: Card(
                   color: Colors.white,
                   shadowColor: Colors.lightBlueAccent,

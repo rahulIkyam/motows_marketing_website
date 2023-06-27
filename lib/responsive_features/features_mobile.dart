@@ -23,7 +23,7 @@ class _FeaturesMobileState extends State<FeaturesMobile> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SizedBox(
-                  width: 400,
+                  width: 350,
                   child: Column(
                     children: [
                       const Text(
@@ -38,7 +38,7 @@ class _FeaturesMobileState extends State<FeaturesMobile> {
                         ),
                       ),
                       Text(
-                        "MOBILE Unlock the potential of your workshop with our comprehensive set of tool designed to streamline operations, enhance customer service, and business growth.",
+                        "Unlock the potential of your workshop with our comprehensive set of tool designed to streamline operations, enhance customer service, and business growth.",
                         maxLines: 7,
                         textAlign: TextAlign.center,
                         style: TextStyle(

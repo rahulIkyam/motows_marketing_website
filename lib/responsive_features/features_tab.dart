@@ -11,11 +11,11 @@ class _FeaturesTabState extends State<FeaturesTab> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 600,
+      height: 650,
       child: Row(
         children: [
           Image.asset("assets/images/side_bar.png",
-              width: 20, height: 600, fit: BoxFit.fitHeight),
+              width: 20, height: 650, fit: BoxFit.cover),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.only(top: 20),

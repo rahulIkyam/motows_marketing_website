@@ -55,20 +55,56 @@ class _MyHomePageState extends State<MyHomePage> {
   void _scrollToSection(int sectionIndex) {
     double sectionOffset = 0.0;
 
-    switch (sectionIndex) {
-      case 1:
-        sectionOffset = 600; // Scroll to About Us section
-        break;
-      case 2:
-        sectionOffset = 650 * 2; // Scroll to Features section
-        break;
-      case 3:
-        sectionOffset = 650 * 3; // Scroll to Benefits section
-        break;
-      default:
-      // Manual scrolling for Landing and Footer sections
-        sectionOffset = sectionIndex * screenHeight;
-        break;
+    if(screenWidth <= 600){
+      switch (sectionIndex) {
+        case 1:
+          sectionOffset = 600; // Scroll to About Us section
+          break;
+        case 2:
+          sectionOffset = 1250; // Scroll to Features section
+          break;
+        case 3:
+          sectionOffset = 2050; // Scroll to Benefits section
+          break;
+        default:
+        // Manual scrolling for Landing and Footer sections
+          sectionOffset = sectionIndex * screenHeight;
+          break;
+      }
+    }
+    else if(screenWidth <=1200){
+      switch (sectionIndex) {
+        case 1:
+          sectionOffset = 600; // Scroll to About Us section
+          break;
+        case 2:
+          sectionOffset = 1240; // Scroll to Features section
+          break;
+        case 3:
+          sectionOffset = 1890; // Scroll to Benefits section
+          break;
+        default:
+        // Manual scrolling for Landing and Footer sections
+          sectionOffset = sectionIndex * screenHeight;
+          break;
+      }
+    }
+    else{
+      switch (sectionIndex) {
+        case 1:
+          sectionOffset = 600; // Scroll to About Us section
+          break;
+        case 2:
+          sectionOffset = 1300; // Scroll to Features section
+          break;
+        case 3:
+          sectionOffset = 1900; // Scroll to Benefits section
+          break;
+        default:
+        // Manual scrolling for Landing and Footer sections
+          sectionOffset = sectionIndex * screenHeight;
+          break;
+      }
     }
 
     _scrollController.animateTo(
@@ -187,7 +223,51 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(
                 child: Footer(),
               ),
-              Container(
+              screenWidth <= 600
+                ? Container(
+                  height: 80,
+                  width: screenWidth,
+                  color: Colors.black,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20, right: 40),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text(
+                              "\u00A9 copyright 2023 Motows Solutions Pvt Ltd",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            InkWell(
+                              onTap: () {
+                                html.window.open("/privacy-policy", "_blank");
+                              },
+                              child: const Text(
+                                "Privacy-Policy",
+                                style: TextStyle(
+                                    decoration: TextDecoration.underline,
+                                    color: Colors.white,
+                                    decorationColor: Colors.white,
+                                    decorationThickness: 3
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Image.asset(
+                          "assets/images/facebook.png",
+                          height: 20,
+                          fit: BoxFit.fitHeight,
+                        ),
+                      ],
+                    ),
+                  ),
+                )
+              : Container(
                 height: 50,
                 width: screenWidth,
                 color: Colors.black,
