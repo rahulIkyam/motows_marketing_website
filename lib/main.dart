@@ -238,7 +238,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Text(
+                            const SelectableText(
                               "\u00A9 copyright 2023 Motows Solutions Pvt Ltd",
                               style: TextStyle(color: Colors.white),
                             ),
@@ -279,7 +279,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       Row(
                         children: [
-                          const Text(
+                          const SelectableText(
                               "\u00A9 copyright 2023 Motows Solutions Pvt Ltd",
                             style: TextStyle(color: Colors.white),
                           ),

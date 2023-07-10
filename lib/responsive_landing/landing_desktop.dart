@@ -48,30 +48,30 @@ class _LandingDesktopState extends State<LandingDesktop> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Padding(
-                        padding: EdgeInsets.only(left: 40, bottom: 12),
-                        child: Text(
-                          "Unleash The Full Potential Of Your Workshop Business With Our Workshop Management App.",
+                        padding: EdgeInsets.only(left: 40, bottom: 0),
+                        child: SelectableText(
+                            "Unleash The Full Potential Of Your Workshop Business With Our Workshop Management App.",
                           style: TextStyle(
                             fontSize: 28,
                             fontWeight: FontWeight.bold,
                             height: 1.5,
                             color: Color(0xff131d48),
                           ),
-                          maxLines: 5,
+                          // maxLines: 5,
                           textAlign: TextAlign.start,
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 40, bottom: 10),
-                        child: Text(
-                          "Revolutionize your garage business with our mobile app. Streamline operations, optimize customer management, and fuel growth. Download now to unlock efficiency and success.",
+                        padding: const EdgeInsets.only(left: 40, bottom: 0),
+                        child: SelectableText(
+                            "Revolutionize your garage business with our mobile app. Streamline operations, optimize customer management, and fuel growth. Download now to unlock efficiency and success.",
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w500,
-                            color: const Color(0xff131d48).withOpacity(0.8),
                             height: 1.5,
+                            color: const Color(0xff131d48).withOpacity(0.8),
                           ),
-                          maxLines: 5,
+                          // maxLines: 5,
                           textAlign: TextAlign.start,
                         ),
                       ),

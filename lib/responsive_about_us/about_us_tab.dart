@@ -22,7 +22,7 @@ class _AboutUsTabState extends State<AboutUsTab> {
                   children: [
                     SizedBox(height: 370,child: Text("?",style: TextStyle(color: Color(0xffDDE8FA),fontSize: 300,fontWeight: FontWeight.bold,),)),
 
-                    Text(
+                    SelectableText(
                       "Why Choose \nMotows",
                       style: TextStyle(
                         fontSize: 38,
@@ -30,7 +30,7 @@ class _AboutUsTabState extends State<AboutUsTab> {
                         height: 1.5,
                         color: Color(0xff131d48),
                       ),
-                      maxLines: 5,
+                      // maxLines: 5,
                     ),
                   ],
                 ),
@@ -59,7 +59,7 @@ class _AboutUsTabState extends State<AboutUsTab> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const Text(
+                                  const SelectableText(
                                     "Build Trust",
                                     style: TextStyle(
                                       fontSize: 22,
@@ -67,16 +67,16 @@ class _AboutUsTabState extends State<AboutUsTab> {
                                       height: 1.5,
                                       color: Color(0xff131d48),
                                     ),
-                                    maxLines: 5,
+                                    // maxLines: 5,
                                   ),
-                                  Text(
+                                  SelectableText(
                                     "Build Trust, ensure\ntransparency, accurate\ndocumentation, and clear\ncommunication for customers.",
                                     style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                       color: const Color(0xff131d48).withOpacity(0.9),
                                     ),
-                                    maxLines: 5,
+                                    // maxLines: 5,
                                   ),
                                 ],
                               ),
@@ -107,7 +107,7 @@ class _AboutUsTabState extends State<AboutUsTab> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const Text(
+                                  const SelectableText(
                                     "Thrive Growth",
                                     style: TextStyle(
                                       fontSize: 22,
@@ -115,16 +115,16 @@ class _AboutUsTabState extends State<AboutUsTab> {
                                       height: 1.5,
                                       color: Color(0xff131d48),
                                     ),
-                                    maxLines: 5,
+                                    // maxLines: 5,
                                   ),
-                                  Text(
+                                  SelectableText(
                                     "Thrive with growth-focused \nsoftware offering insights, \nanalytics, and data-\ndriven decisions.",
                                     style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                       color: const Color(0xff131d48).withOpacity(0.9),
                                     ),
-                                    maxLines: 5,
+                                    // maxLines: 5,
                                   ),
                                 ],
                               ),
@@ -156,7 +156,7 @@ class _AboutUsTabState extends State<AboutUsTab> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  const Text(
+                                  const SelectableText(
                                     "Save Time",
                                     style: TextStyle(
                                       fontSize: 22,
@@ -164,16 +164,16 @@ class _AboutUsTabState extends State<AboutUsTab> {
                                       height: 1.5,
                                       color: Color(0xff131d48),
                                     ),
-                                    maxLines: 5,
+                                    // maxLines: 5,
                                   ),
-                                  Text(
+                                  SelectableText(
                                     "Save time by streamlining \noperations, automating \nworkflows, and\noptimizing scheduling.",
                                     style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                       color: const Color(0xff131d48).withOpacity(0.9),
                                     ),
-                                    maxLines: 5,
+                                    // maxLines: 5,
                                   ),
                                 ],
                               ),

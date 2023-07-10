@@ -33,7 +33,7 @@ class _AboutUsDesktopState extends State<AboutUsDesktop> {
                           Column(
                             children: [
                               SizedBox(height: 220,),
-                              Text(
+                              SelectableText(
                                 "Why Choose \nMotows",
                                 style: TextStyle(
                                   fontSize: 45,
@@ -41,7 +41,7 @@ class _AboutUsDesktopState extends State<AboutUsDesktop> {
 
                                   color: Color(0xff131d48),
                                 ),
-                                maxLines: 5,
+                                // maxLines: 5,
                               ),
                             ],
                           ),
@@ -75,7 +75,7 @@ class _AboutUsDesktopState extends State<AboutUsDesktop> {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    const Text(
+                                    const SelectableText(
                                       "Build Trust",
                                       style: TextStyle(
                                         fontSize: 24,
@@ -83,16 +83,16 @@ class _AboutUsDesktopState extends State<AboutUsDesktop> {
                                         height: 1.5,
                                         color: Color(0xff131d48),
                                       ),
-                                      maxLines: 5,
+                                      // maxLines: 5,
                                     ),
-                                    Text(
+                                    SelectableText(
                                       "Build Trust, ensure transparency,\naccurate documentation, and clear\ncommunication for customers.",
                                       style: TextStyle(
                                         fontSize: 16,
                                         fontWeight: FontWeight.w500,
                                         color: const Color(0xff131d48).withOpacity(0.9),
                                       ),
-                                      maxLines: 5,
+                                      // maxLines: 5,
                                     ),
                                   ],
                                 ),
@@ -125,7 +125,7 @@ class _AboutUsDesktopState extends State<AboutUsDesktop> {
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        const Text(
+                                        const SelectableText(
                                           "Thrive Growth",
                                           style: TextStyle(
                                             fontSize: 24,
@@ -133,16 +133,16 @@ class _AboutUsDesktopState extends State<AboutUsDesktop> {
                                             height: 1.5,
                                             color: Color(0xff131d48),
                                           ),
-                                          maxLines: 5,
+                                          // maxLines: 5,
                                         ),
-                                        Text(
+                                        SelectableText(
                                           "Thrive with growth-focused software\noffering insights, analytics, and data-\ndriven decisions.",
                                           style: TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.w500,
                                             color: const Color(0xff131d48).withOpacity(0.9),
                                           ),
-                                          maxLines: 5,
+                                          // maxLines: 5,
                                         ),
                                       ],
                                     ),
@@ -173,7 +173,7 @@ class _AboutUsDesktopState extends State<AboutUsDesktop> {
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        const Text(
+                                        const SelectableText(
                                           "Save Time",
                                           style: TextStyle(
                                             fontSize: 24,
@@ -181,16 +181,16 @@ class _AboutUsDesktopState extends State<AboutUsDesktop> {
                                             height: 1.5,
                                             color: Color(0xff131d48),
                                           ),
-                                          maxLines: 5,
+                                          // maxLines: 5,
                                         ),
-                                        Text(
+                                        SelectableText(
                                           "Save time by streamlining operations,\nautomating workflows, and\noptimizing scheduling.",
                                           style: TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.w500,
                                             color: const Color(0xff131d48).withOpacity(0.9),
                                           ),
-                                          maxLines: 5,
+                                          // maxLines: 5,
                                         ),
                                       ],
                                     ),

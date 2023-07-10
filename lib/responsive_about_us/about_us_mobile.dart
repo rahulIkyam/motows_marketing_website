@@ -33,7 +33,7 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
+              const SelectableText(
                 "Why Choose \nMotows",
                 style: TextStyle(
                   fontSize: 35,
@@ -41,7 +41,7 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
                   height: 1.1,
                   color: Color(0xff131d48),
                 ),
-                maxLines: 5,
+                // maxLines: 5,
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 60, right: 80, top: 10),
@@ -63,7 +63,7 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text(
+                              const SelectableText(
                                 "Build Trust",
                                 style: TextStyle(
                                   fontSize: 22,
@@ -71,16 +71,16 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
                                   height: 1.5,
                                   color: Color(0xff131d48),
                                 ),
-                                maxLines: 5,
+                                // maxLines: 5,
                               ),
-                              Text(
+                              SelectableText(
                                 "Build Trust, ensure transparency, accurate documentation, and clear communication for customers.",
                                 style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xff131d48).withOpacity(0.9),
                                 ),
-                                maxLines: 5,
+                                // maxLines: 5,
                               ),
                             ],
                           ),
@@ -110,7 +110,7 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text(
+                              const SelectableText(
                                 "Thrive Growth",
                                 style: TextStyle(
                                   fontSize: 22,
@@ -118,16 +118,16 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
                                   height: 1.5,
                                   color: Color(0xff131d48),
                                 ),
-                                maxLines: 5,
+                                // maxLines: 5,
                               ),
-                              Text(
+                              SelectableText(
                                 "Thrive with growth-focused software offering insights, analytics, and data-driven decisions.",
                                 style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xff131d48).withOpacity(0.9),
                                 ),
-                                maxLines: 5,
+                                // maxLines: 5,
                               ),
                             ],
                           ),
@@ -157,7 +157,7 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text(
+                              const SelectableText(
                                 "Save Time",
                                 style: TextStyle(
                                   fontSize: 22,
@@ -165,16 +165,16 @@ class _AboutUsMobileState extends State<AboutUsMobile> {
                                   height: 1.5,
                                   color: Color(0xff131d48),
                                 ),
-                                maxLines: 5,
+                                // maxLines: 5,
                               ),
-                              Text(
+                              SelectableText(
                                 "Save time by streamlining operations, automating workflows, and optimizing scheduling.",
                                 style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xff131d48).withOpacity(0.9),
                                 ),
-                                maxLines: 5,
+                                // maxLines: 5,
                               ),
                             ],
                           ),

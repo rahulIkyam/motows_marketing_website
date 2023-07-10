@@ -40,9 +40,9 @@ class _FooterMobileState extends State<FooterMobile> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text(
+                        const SelectableText(
                           "Download Our Workshop Owner App Today",
-                          maxLines: 5,
+                          // maxLines: 5,
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: 20,

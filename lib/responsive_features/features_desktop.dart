@@ -26,9 +26,9 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                   width: 600,
                   child: Column(
                     children: [
-                      const Text(
+                      const SelectableText(
                         "Powerful Features for Your Workshop",
-                        maxLines: 5,
+                        // maxLines: 5,
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 28,
@@ -37,9 +37,9 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                           color: Color(0xff131d48),
                         ),
                       ),
-                      Text(
+                      SelectableText(
                         "Unlock the potential of your workshop with our comprehensive set of tool designed to streamline operations, enhance customer service, and business growth.",
-                        maxLines: 7,
+                        // maxLines: 7,
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 14,
@@ -94,7 +94,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                           height: 40,
                                         ),
                                         const SizedBox(width: 25),
-                                        Text(
+                                        SelectableText(
                                           "Schedule\nAppointment",
                                           style: TextStyle(
                                             fontSize: 16,
@@ -103,7 +103,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                             color: const Color(0xff131d48)
                                                 .withOpacity(0.9),
                                           ),
-                                          maxLines: 5,
+                                          // maxLines: 5,
                                         ),
                                       ],
                                     ),
@@ -128,7 +128,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                           height: 40,
                                         ),
                                         const SizedBox(width: 25),
-                                        Text(
+                                        SelectableText(
                                           "Customer\nManagement",
                                           style: TextStyle(
                                             fontSize: 16,
@@ -137,7 +137,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                             color: const Color(0xff131d48)
                                                 .withOpacity(0.9),
                                           ),
-                                          maxLines: 5,
+                                          // maxLines: 5,
                                         ),
                                       ],
                                     ),
@@ -169,7 +169,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                           height: 40,
                                         ),
                                         const SizedBox(width: 25),
-                                        Text(
+                                        SelectableText(
                                           "Vehicle\nManagement",
                                           style: TextStyle(
                                             fontSize: 16,
@@ -178,7 +178,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                             color: const Color(0xff131d48)
                                                 .withOpacity(0.9),
                                           ),
-                                          maxLines: 5,
+                                          // maxLines: 5,
                                         ),
                                       ],
                                     ),
@@ -203,7 +203,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                           height: 40,
                                         ),
                                         const SizedBox(width: 25),
-                                        Text(
+                                        SelectableText(
                                           "Estimate\nCreation",
                                           style: TextStyle(
                                             fontSize: 16,
@@ -212,7 +212,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                             color: const Color(0xff131d48)
                                                 .withOpacity(0.9),
                                           ),
-                                          maxLines: 5,
+                                          // maxLines: 5,
                                         ),
                                       ],
                                     ),
@@ -244,7 +244,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                           height: 40,
                                         ),
                                         const SizedBox(width: 25),
-                                        Text(
+                                        SelectableText(
                                           "Job Card",
                                           style: TextStyle(
                                             fontSize: 16,
@@ -253,7 +253,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                             color: const Color(0xff131d48)
                                                 .withOpacity(0.9),
                                           ),
-                                          maxLines: 5,
+                                          // maxLines: 5,
                                         ),
                                       ],
                                     ),
@@ -278,7 +278,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                           height: 40,
                                         ),
                                         const SizedBox(width: 25),
-                                        Text(
+                                        SelectableText(
                                           "WhatsApp\nNotification",
                                           style: TextStyle(
                                             fontSize: 16,
@@ -287,7 +287,7 @@ class _FeaturesDesktopState extends State<FeaturesDesktop> {
                                             color: const Color(0xff131d48)
                                                 .withOpacity(0.9),
                                           ),
-                                          maxLines: 5,
+                                          // maxLines: 5,
                                         ),
                                       ],
                                     ),

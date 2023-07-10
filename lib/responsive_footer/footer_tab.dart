@@ -37,9 +37,9 @@ class _FooterTabState extends State<FooterTab> {
                       children: [
                         const Padding(
                           padding: EdgeInsets.only(left: 10),
-                          child: Text(
+                          child: SelectableText(
                             "Download Our Workshop Owner App Today",
-                            maxLines: 5,
+                            // maxLines: 5,
                             style: TextStyle(
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold,
@@ -49,9 +49,9 @@ class _FooterTabState extends State<FooterTab> {
                         ),
                         const Padding(
                           padding: EdgeInsets.only(left: 10),
-                          child: Text(
+                          child: SelectableText(
                             "Take control of your workshop's success with our powerful and user-friendly mobile app.",
-                            maxLines: 5,
+                            // maxLines: 5,
                             style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w500,

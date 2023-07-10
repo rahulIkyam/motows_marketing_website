@@ -87,7 +87,7 @@ class _LandingMobileState extends State<LandingMobile> {
                     children: [
                       const Padding(
                         padding: EdgeInsets.only(left: 30, bottom: 10),
-                        child: Text(
+                        child: SelectableText(
                           "Unleash The Full Potential Of Your Workshop Business With Our Workshop Management App.",
                           style: TextStyle(
                             fontSize: 20,
@@ -95,13 +95,13 @@ class _LandingMobileState extends State<LandingMobile> {
                             height: 1.5,
                             color: Color(0xff131d48),
                           ),
-                          maxLines: 5,
+                          // maxLines: 5,
                           textAlign: TextAlign.start,
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 30, bottom: 10),
-                        child: Text(
+                        child: SelectableText(
                           "Revolutionize your garage business with our mobile app. Streamline operations, optimize customer management, and fuel growth. Download now to unlock efficiency and success.",
                           style: TextStyle(
                             fontSize: 12,
@@ -109,7 +109,7 @@ class _LandingMobileState extends State<LandingMobile> {
                             color: const Color(0xff131d48).withOpacity(0.8),
                             height: 1.5,
                           ),
-                          maxLines: 5,
+                          // maxLines: 5,
                           textAlign: TextAlign.start,
                         ),
                       ),
